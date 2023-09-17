@@ -1,8 +1,8 @@
 void main(List<String> arguments) {
   DateTime data1 = DateTime.now();
-  data1 = DateTime.parse("2022-02-01 00:00:00");
+  data1 = DateTime.parse("2023-09-17 00:00:00");
 
-  // Partes da data
+  print('PARTES DA DATA');
   print(data1);
   print(data1.day);
   print(data1.month);
@@ -11,16 +11,23 @@ void main(List<String> arguments) {
   print(data1.microsecond);
   print(data1.second);
 
-  // Dia da semana
+  print('\n');
+
+  print('DIA DA SEMANA');
   print(data1.weekday);
 
-  // Obtem o tamanho da String
+  print('\n');
+
+  print('OBTENDO O TAMANHO DA STRING');
   print(data1.add(Duration(days: 1)));
   print(data1);
+  print('\n');
   print(data1.subtract(Duration(hours: 1)));
   print(data1);
 
-  var data2 = DateTime.parse("2022-02-01 00:00:00");
+  print('\n');
+  
+  var data2 = DateTime.parse("2023-09-17 00:00:00");
   print(data1.isAfter(data2));
   print(data1.isBefore(data2));
   print(data1.compareTo(data2));
