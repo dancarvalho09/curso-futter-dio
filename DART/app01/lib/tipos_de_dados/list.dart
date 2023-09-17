@@ -1,6 +1,4 @@
 
-import 'dart:ffi';
-
 void main(List<String> arguments) {
   List<String> lstString = [];
   var lstInt = [1, 10, 50];
